@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* header */
+header {
+    background-color: black;
+    padding: 20px;
+    align-items: center;
+}
+header:hover {
+    cursor: pointer;
+}
+
+.menu {
+    display: inline;
+    padding: 40px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        padding: 8px;
+    }
+
+    .header {
+        padding: 5px;}
+}
+
+h2 {
+    position: relative;
+    text-transform: uppercase;	
+    margin: 0;
+    padding: 30px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;color: #fff;
+    
+}
+
+/* Tela 1 */
+
+#fundo {
+    background-image: url(/assets/imagem-centro.png);
+    background-color: black;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .section1 {
+        height: 400px;
+    }
+    
+}
+
+/* Chamada */
+h1 {
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;color: #fff;
+    text-transform: uppercase;	
+    margin: 0;
+    font-size: 6vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+#subtitulo {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.highlight {
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;color: #fff;
+    position: relative;
+    text-transform: uppercase;	
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+#mais {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+/* Formulário */
+#content {
+    padding-top: 60px;
+    text-align: center;
+}
+
+input[type=text] {
+    height: 2em;
+    margin: 1em 0 1.5em;
+    border-radius: 1.75em;
+    padding: 0 1em;
+}
+
+input[type=submit] {
+    background: linear-gradient(to right, #B38728, #FBF5B7, #AA771C);
+    text-decoration: none;
+    border: none;
+    border-radius: 1.75em;
+    padding: 2px 8px 2px 8px;
+}
+  
+input[type=submit]:hover {
+    background:white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Tela 2 */
+.section-2 {
+    background-color: white;
+    width: auto;
+    height: 600px;
+}
+
+.nomeProduto {
+    color: black;
+    padding: 15px 0 5px 0;
+}
+
+.desconto {
+    color:gray;
+    text-decoration: line-through;
+    font-size: 14px;
+    padding-left: 3px;
+    
+}
+
+.imgProduto {
+    width: 320px;
+    height: 320px;
+}
+
+.gridProdutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prod-card {
+    padding: 15px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.imgProduto:hover{
+    opacity: 0.5;
+}
+
+.prod-card:hover{
+    transform: scale(1.02);;
+}
+
+@media (max-width: 600px) {
+    .gridProdutos {
+        flex-direction: column-reverse;
+    }
+}
+
+.preco {
+    color:black;
+    font-size: 16px;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
